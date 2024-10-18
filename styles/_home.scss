@@ -1,0 +1,152 @@
+@import "./variables";
+.home{
+    position: relative;
+    margin-top: 20px;
+    padding: 112px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .home-left{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        row-gap: 65px;
+        align-items: center;
+        justify-content: center;
+        right: 650px;
+        .home-icon{
+            display: flex;
+            flex-direction: column;
+            a{
+                color: $text-color;
+                margin-top: 5px;
+                transition: all .5s;
+                &:hover{
+                    color: $first-color;
+                }
+            }
+        }
+    }
+    
+    .home-img{
+        width: 310px;
+        
+    }
+    .home-tooltip{
+        position: absolute;
+        left: 250px;
+        bottom:520px;
+        span{
+            background: $gradient-color;
+            color: $white-color;
+            padding: 6px 12px;
+            border-radius:64px;
+            position: absolute;
+            bottom: 20px;
+        }
+    }
+    .home-text{
+        position: absolute;
+        bottom: 160px;
+        display: flex;
+        left: -50px;
+        column-gap:7px;
+        justify-content: center;
+        :nth-child(2){
+            z-index: -1;
+        }
+        span{
+            font-size:256px;
+            color: $first-color;
+        }
+
+        
+    }
+    .home-button{
+        background: $gradient-color;
+        padding: 12px;
+        color: $white-color;
+        border-radius: 64px;
+        display: inline-flex;
+        align-items: center;
+        column-gap:7px;
+        margin-top: 15px;
+        transition: all .5s;
+        i{
+            color: $first-color;
+            font-size: 20px;
+        }
+        &:hover{
+            box-shadow: 0px 12px 32px #271208;
+        }
+       
+        
+    }
+    
+   
+   
+}
+.home-left span{
+    rotate: 90deg;
+}
+.home-left span::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color:$text-color;
+    top: 10px;
+    left: 55px;
+}
+@media screen and (max-width:1050px) {
+    .home-left{
+        position: absolute;
+        
+        left:-80px;
+    }
+}
+@media screen and (max-width:540px) {
+    .home-img{
+        width:220px !important;
+        
+        
+    }
+    .home-text span{
+       font-size:180px !important;
+       
+    }
+    .home-tooltip{
+        position: absolute;
+        
+        background-color: blue;
+        top:100px;
+        left:-100px;
+        img{
+            position: absolute;
+            right:10px;
+        }
+        span{
+            background: $gradient-color;
+            height:30px;
+            color: $white-color;
+            padding:6px 12px ;
+            border-radius:64px;
+            position: absolute;
+            top:-10px;
+            left:-10px;
+        }
+       
+    }
+
+}
+@media screen and (max-width:450px) {
+    .home-left{
+        display: none !important;
+    }
+}
+
+
+
+
+

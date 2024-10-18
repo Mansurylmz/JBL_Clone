@@ -1,0 +1,30 @@
+@import "./variables";
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:100px;
+    h2{
+        color: $white-color;
+    }
+    .product-boxes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .product-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 200px;
+                transition: all .5s;
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

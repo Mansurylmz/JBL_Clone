@@ -1,0 +1,117 @@
+footer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    p{
+        color: hsl(23, 100%, 50%);
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .footer-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        column-gap: 250px;
+        row-gap: 30px;
+        .footer-left,.footer-right{
+            h3{
+                color: hsl(0, 0%, 100%);
+                margin-bottom: 15px;
+            }
+            ul{
+                li{
+                    margin-top: 5px;
+                    transition: all .5s;
+                    &:hover{
+                        color: hsl(23, 100%, 50%);
+                        transform: translateX(3px);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .footer-top{
+        display:flex;
+        flex-direction: column;
+        margin-top: 15px;
+        input{
+            padding: 12px ;
+            width:50%;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            color: hsl(23, 4%, 60%);
+            background-color: hsl(23, 4%, 10%);
+        }
+        button{
+            color: hsl(0, 0%, 100%);
+            width: 50%;
+            padding: 8px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            margin-top:10px;
+            background-color: hsl(23, 4%, 10%);
+            i{
+                color: hsl(23, 100%, 50%);
+                font-size: 20px;
+            }
+            
+        }
+    }
+    .footer-icons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        .icon{
+            a{
+                color: hsl(23, 4%, 60%);
+                margin-left: 10px;
+                
+            }
+            i{
+                transition: all .5s;
+                &:hover{
+                    color: hsl(23, 100%, 50%);
+                }
+            }
+            
+        }
+    }
+
+}
+@media screen and (max-width:445px) {
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        p{
+            text-align: center;
+            font-size: 35px;
+        }
+        .footer-center{
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+        .footer-top{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            input,button{
+                width: 100%;
+            }
+        }
+    }
+}
